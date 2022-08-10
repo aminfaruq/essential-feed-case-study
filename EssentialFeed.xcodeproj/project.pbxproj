@@ -16,6 +16,7 @@
 		838B412328917AE2005075D3 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838B412228917AE2005075D3 /* FeedLoader.swift */; };
 		83D6AFC328958E9700C7D58F /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6AFC228958E9700C7D58F /* RemoteFeedLoader.swift */; };
 		83D8DC1C28A3865500958D2F /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8DC1B28A3865500958D2F /* HTTPClient.swift */; };
+		83D8DC1E28A3870700958D2F /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8DC1D28A3870700958D2F /* FeedItemsMapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +40,7 @@
 		838B412228917AE2005075D3 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		83D6AFC228958E9700C7D58F /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		83D8DC1B28A3865500958D2F /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		83D8DC1D28A3870700958D2F /* FeedItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			children = (
 				83D6AFC228958E9700C7D58F /* RemoteFeedLoader.swift */,
 				83D8DC1B28A3865500958D2F /* HTTPClient.swift */,
+				83D8DC1D28A3870700958D2F /* FeedItemsMapper.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				83D6AFC328958E9700C7D58F /* RemoteFeedLoader.swift in Sources */,
 				83D8DC1C28A3865500958D2F /* HTTPClient.swift in Sources */,
 				838B412328917AE2005075D3 /* FeedLoader.swift in Sources */,
+				83D8DC1E28A3870700958D2F /* FeedItemsMapper.swift in Sources */,
 				838B412128917A93005075D3 /* FeedItem.swift in Sources */,
 				838B410A28917A5A005075D3 /* EssentialFeed.docc in Sources */,
 			);
