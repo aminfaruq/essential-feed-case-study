@@ -1,5 +1,7 @@
 # Essential Feed App – Image Feed Feature
 
+[![Build Status](https://github.com/aminfaruq/essential-feed-case-study/actions/workflows/CI.yml/badge.svg)
+
 
 ## BDD Specs
 
