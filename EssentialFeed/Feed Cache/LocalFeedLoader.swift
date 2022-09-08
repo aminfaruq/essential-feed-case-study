@@ -10,10 +10,7 @@ import Foundation
 public final class LocalFeedLoader {
     private let store: FeedStore
     private let currentDate: () -> Date
-    let calendar = Calendar(identifier: .gregorian)
-    
-    public typealias SaveResult = Error?
-    public typealias LoadResult = LoadFeedResult
+    private let calendar = Calendar(identifier: .gregorian)
     
     public init(store: FeedStore, currentDate: @escaping () -> Date) {
         self.store = store
@@ -28,6 +25,10 @@ public final class LocalFeedLoader {
         guard let maxCacheAge = calendar.date(byAdding: .day, value: maxCacheAgeInDays, to: timestamp) else { return false }
         return currentDate() < maxCacheAge
     }
+}
+
+extension LocalFeedLoader {
+    public typealias SaveResult = Error?
     
     private func cache(_ feed: [FeedImage], with completion: @escaping (SaveResult) -> Void) {
         store.insert(feed.toLocal() , timestamp: currentDate()) { [weak self] errorData in
@@ -50,8 +51,10 @@ public final class LocalFeedLoader {
     }
 }
 
-extension LocalFeedLoader {
-    public func load(completion: @escaping (LoadResult?) -> Void) {
+extension LocalFeedLoader: FeedLoader {
+    public typealias LoadResult = LoadFeedResult
+    
+    public func load(completion: @escaping (LoadResult) -> Void) {
         store.retrieve { [weak self] result in
             guard let self = self else { return }
             
