@@ -41,7 +41,7 @@ class CodableFeedStoreTest : XCTestCase {
         
         insert((feed, timestamp), to: sut)
         
-        expect(sut, toRetrieve: .found(feed: feed, timeStamp: timestamp))
+        expect(sut, toRetrieve: .found(feed: feed, timestamp: timestamp))
     }
     
     
@@ -52,7 +52,7 @@ class CodableFeedStoreTest : XCTestCase {
         
         insert((feed, timestamp), to: sut)
         
-        expect(sut, toRetrieveTwice: .found(feed: feed, timeStamp: timestamp))
+        expect(sut, toRetrieveTwice: .found(feed: feed, timestamp: timestamp))
     }
     
     func test_retrieve_deliversFailureOnRetrievalError() {
@@ -84,7 +84,7 @@ class CodableFeedStoreTest : XCTestCase {
         let latestInsertionError = insert((latestFeed, latestTimestamp), to: sut)
         
         XCTAssertNil(latestInsertionError, "Expected to override cache successfully")
-        expect(sut, toRetrieve: .found(feed: latestFeed, timeStamp: latestTimestamp))
+        expect(sut, toRetrieve: .found(feed: latestFeed, timestamp: latestTimestamp))
     }
     
     func test_insert_deliversErrorOnInsertionError() {
@@ -152,7 +152,6 @@ class CodableFeedStoreTest : XCTestCase {
         waitForExpectations(timeout: 5.0)
         
         XCTAssertEqual(completedOperationsInOrder, [op1, op2, op3], "Expected side-effects to run serially but operations finished in the wrong order")
-
     }
 }
 
@@ -168,7 +167,6 @@ extension CodableFeedStoreTest {
     @discardableResult
     private func insert(_ cache: (feed: [LocalFeedImage], timestamp: Date), to sut: FeedStore) -> Error? {
         let exp = expectation(description: "Wait for cache insertion")
-        
         var insertionError: Error?
         sut.insert(cache.feed, timestamp: cache.timestamp) { recievedInsertionError in
             insertionError = recievedInsertionError
@@ -181,8 +179,8 @@ extension CodableFeedStoreTest {
     private func deleteCache(from sut: FeedStore) -> Error? {
         let exp = expectation(description: "Wait for cache deletion")
         var deletionError: Error?
-        sut.deleteCachedFeed { recievedDeletionError in
-            deletionError = recievedDeletionError
+        sut.deleteCachedFeed { receivedDeletionError in
+            deletionError = receivedDeletionError
             exp.fulfill()
         }
         wait(for: [exp], timeout: 1.0)
