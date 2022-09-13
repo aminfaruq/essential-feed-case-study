@@ -71,7 +71,9 @@ class CoreDataFeedStoreTests: XCTestCase, FeedStoreSpecs {
     }
     
     func test_delete_emptiesPreviouslyInsertedCache() {
+        let sut = makeSUT()
         
+        assertThatDeleteEmptiesPreviouslyInsertedCache(on: sut)
     }
     
     func test_storeSideEffects_runSerially() {
@@ -89,7 +91,7 @@ extension CoreDataFeedStoreTests {
         trackForMemoryLeaks(sut, file: file, line: line)
         return sut
     }
-        
+    
 }
 
 
