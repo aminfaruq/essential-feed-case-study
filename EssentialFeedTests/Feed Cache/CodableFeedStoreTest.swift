@@ -8,7 +8,7 @@
 import XCTest
 import EssentialFeed
 
-class CodableFeedStoreTest : XCTestCase {
+class CodableFeedStoreTest : XCTestCase, FailableFeedStoreSpecs {
     
     override func setUp() {
         super.setUp()
@@ -81,6 +81,14 @@ class CodableFeedStoreTest : XCTestCase {
         XCTAssertNil(insertionError, "Expected to insert cache successfully")
     }
     
+    func test_insert_deliversNoErrorOnNonEmptyCache() {
+        let sut = makeSUT()
+        insert((uniqueImageFeed().local, Date()), to: sut)
+        let insertionError = insert((uniqueImageFeed().local, Date()), to: sut)
+        
+        XCTAssertNil(insertionError, "Expected to override cache successfully")
+    }
+    
     func test_insert_overridesPreviouslyInsertedCacheValues() {
         let sut = makeSUT()
         
@@ -89,7 +97,7 @@ class CodableFeedStoreTest : XCTestCase {
         
         let latestFeed = uniqueImageFeed().local
         let latestTimestamp = Date()
-       
+        
         insert((latestFeed, latestTimestamp), to: sut)
         
         expect(sut, toRetrieve: .found(feed: latestFeed, timestamp: latestTimestamp))
@@ -151,7 +159,7 @@ class CodableFeedStoreTest : XCTestCase {
         expect(sut, toRetrieve: .empty)
     }
     
-  
+    
     func test_delete_deliversErrorOnDeletionError() {
         // let nonDeletePermissionURL = cachesDirectory()
         let nonDeletePermissionURL = URL(fileURLWithPath: "/dev/null")
@@ -171,7 +179,7 @@ class CodableFeedStoreTest : XCTestCase {
         
         expect(sut, toRetrieve: .empty)
     }
-     
+    
     
     func test_storeSideEffects_runSerially() {
         let sut = makeSUT()
