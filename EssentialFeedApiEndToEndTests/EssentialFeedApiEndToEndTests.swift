@@ -40,7 +40,7 @@ class EssentialFeedApiEndToEndTests: XCTestCase {
         let loader = RemoteFeedLoader(url: testServerURL, client: client)
         trackForMemoryLeaks(client, file: file, line: line)
         trackForMemoryLeaks(client, file: file, line: line)
-
+        
         let exp = expectation(description: "Wait for load completion")
         
         var receivedResult: FeedLoader.Result?
@@ -103,7 +103,4 @@ class EssentialFeedApiEndToEndTests: XCTestCase {
     private func imageURL(at index: Int) -> URL {
         return URL(string: "https://url-\(index+1).com")!
     }
-    
-  
-    
 }
