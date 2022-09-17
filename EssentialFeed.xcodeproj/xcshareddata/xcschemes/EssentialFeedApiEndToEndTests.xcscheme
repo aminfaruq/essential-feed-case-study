@@ -14,9 +14,9 @@
             buildForAnalyzing = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8329C8F128D1C055005FDCB4"
-               BuildableName = "EssentialFeedCacheIntegrationTest.xctest"
-               BlueprintName = "EssentialFeedCacheIntegrationTest"
+               BlueprintIdentifier = "8347494E28BF6E72009D8EA7"
+               BuildableName = "EssentialFeedApiEndToEndTests.xctest"
+               BlueprintName = "EssentialFeedApiEndToEndTests"
                ReferencedContainer = "container:EssentialFeed.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,9 +44,9 @@
             testExecutionOrdering = "random">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "8329C8F128D1C055005FDCB4"
-               BuildableName = "EssentialFeedCacheIntegrationTest.xctest"
-               BlueprintName = "EssentialFeedCacheIntegrationTest"
+               BlueprintIdentifier = "8347494E28BF6E72009D8EA7"
+               BuildableName = "EssentialFeedApiEndToEndTests.xctest"
+               BlueprintName = "EssentialFeedApiEndToEndTests"
                ReferencedContainer = "container:EssentialFeed.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -72,9 +72,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "8329C8F128D1C055005FDCB4"
-            BuildableName = "EssentialFeedCacheIntegrationTest.xctest"
-            BlueprintName = "EssentialFeedCacheIntegrationTest"
+            BlueprintIdentifier = "8347494E28BF6E72009D8EA7"
+            BuildableName = "EssentialFeedApiEndToEndTests.xctest"
+            BlueprintName = "EssentialFeedApiEndToEndTests"
             ReferencedContainer = "container:EssentialFeed.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
