@@ -19,37 +19,28 @@ class FeedViewControllerTest: XCTestCase {
         
         sut.loadViewIfNeeded()
         XCTAssertEqual(loader.loadCallCount, 1, "Expected a loading request once view is loaded")
-
+        
         sut.simulateUserInitiatedFeedReload()
         XCTAssertEqual(loader.loadCallCount, 2, "Expected another loading request once user initiates a reload")
-
+        
         sut.simulateUserInitiatedFeedReload()
         XCTAssertEqual(loader.loadCallCount, 3, "Expected yet another loading request once user initiates another reload")
     }
     
     func test_loadingFeedIndicator_isVisibleWhileLoadingFeed() {
-        let (sut, _) = makeSUT()
-        
-        sut.loadViewIfNeeded()
-        
-        XCTAssertTrue(sut.isShowingLoadingIndicator)
-    }
-    
-    func test_viewDidLoad_hidesLoadingIndicatorOnLoaderCompletion() {
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
-        
         XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once view is loaded")
         
         loader.completeFeedLoading(at: 0)
-        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading is completed")
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once loading completes successfully")
         
         sut.simulateUserInitiatedFeedReload()
         XCTAssertTrue(sut.isShowingLoadingIndicator, "Expected loading indicator once user initiates a reload")
         
-        loader.completeFeedLoading(at: 1)
-        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading is completed")
+        loader.completeFeedLoadingWithError(at: 1)
+        XCTAssertFalse(sut.isShowingLoadingIndicator, "Expected no loading indicator once user initiated loading completes with error")
     }
     
     func test_loadFeedCompletion_rendersSuccessfullyLoadedFeed() {
@@ -82,7 +73,7 @@ class FeedViewControllerTest: XCTestCase {
         loader.completeFeedLoadingWithError(at: 1)
         assertThat(sut, isRendering: [image0])
     }
-
+    
     
     // MARK: - Helpers
     
