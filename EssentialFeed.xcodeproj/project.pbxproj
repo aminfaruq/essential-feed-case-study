@@ -49,6 +49,8 @@
 		83D8DC1E28A3870700958D2F /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8DC1D28A3870700958D2F /* FeedItemsMapper.swift */; };
 		83FA785728D59E04001C8D1D /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83FA784F28D59E03001C8D1D /* EssentialFeediOS.framework */; };
 		83FA786528D6D5D6001C8D1D /* FeedViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA786428D6D5D6001C8D1D /* FeedViewControllerTest.swift */; };
+		83FA786C28D6DA6C001C8D1D /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 838B410528917A5A005075D3 /* EssentialFeed.framework */; platformFilter = ios; };
+		83FA786D28D6DA6C001C8D1D /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 838B410528917A5A005075D3 /* EssentialFeed.framework */; platformFilter = ios; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,7 +68,28 @@
 			remoteGlobalIDString = 83FA784E28D59E03001C8D1D;
 			remoteInfo = EssentialFeediOS;
 		};
+		83FA786E28D6DA6C001C8D1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 838B40FC28917A5A005075D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 838B410428917A5A005075D3;
+			remoteInfo = EssentialFeed;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83FA787028D6DA6C001C8D1D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83FA786D28D6DA6C001C8D1D /* EssentialFeed.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
@@ -147,6 +170,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83FA786C28D6DA6C001C8D1D /* EssentialFeed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +251,7 @@
 				83FA785028D59E03001C8D1D /* EssentialFeediOS */,
 				83FA785A28D59E04001C8D1D /* EssentialFeediOSTests */,
 				838B410628917A5A005075D3 /* Products */,
+				83FA786628D6D95F001C8D1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -345,6 +370,13 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
+		83FA786628D6D95F001C8D1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -444,10 +476,12 @@
 				83FA784B28D59E03001C8D1D /* Sources */,
 				83FA784C28D59E03001C8D1D /* Frameworks */,
 				83FA784D28D59E03001C8D1D /* Resources */,
+				83FA787028D6DA6C001C8D1D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83FA786F28D6DA6C001C8D1D /* PBXTargetDependency */,
 			);
 			name = EssentialFeediOS;
 			productName = EssentialFeediOS;
@@ -665,6 +699,12 @@
 			isa = PBXTargetDependency;
 			target = 83FA784E28D59E03001C8D1D /* EssentialFeediOS */;
 			targetProxy = 83FA785828D59E04001C8D1D /* PBXContainerItemProxy */;
+		};
+		83FA786F28D6DA6C001C8D1D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			platformFilter = ios;
+			target = 838B410428917A5A005075D3 /* EssentialFeed */;
+			targetProxy = 83FA786E28D6DA6C001C8D1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -973,9 +1013,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1002,9 +1043,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = co.id.aminfaruq.EssentialFeediOS;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
