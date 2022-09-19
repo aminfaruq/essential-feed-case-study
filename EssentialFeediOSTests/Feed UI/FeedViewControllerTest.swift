@@ -225,7 +225,7 @@ class FeedViewControllerTest: XCTestCase {
     
     func test_feedImageView_cancelsImageURLPreloadingWhenNotNearVisibleAnymore() {
         let image0 = makeImage(url: URL(string: "http://url-0.com")!)
-        let image1 = makeImage(url: URL(string: "http://url-1.com")!)
+        let image1 = makeImage(url: URL(string: "http://rl-1.com")!)
         let (sut, loader) = makeSUT()
         
         sut.loadViewIfNeeded()
