@@ -1,5 +1,5 @@
 //
-//  FeedViewModel.swift
+//  FeedPresenter.swift
 //  EssentialFeediOS
 //
 //  Created by Amin faruq on 19/09/22.
@@ -7,7 +7,15 @@
 
 import EssentialFeed
 
-final class FeedViewModel {
+protocol FeedLoadingView: AnyObject {
+    func display(isLoading: Bool)
+}
+
+protocol FeedView {
+    func display(feed: [FeedImage])
+}
+
+final class FeedPresenter {
     typealias Observer<T> = (T) -> Void
     
     private let feedLoader: FeedLoader
@@ -16,16 +24,16 @@ final class FeedViewModel {
         self.feedLoader = feedLoader
     }
     
-    var onLoadingStateChange: Observer<Bool>?
-    var onFeedLoad: Observer<[FeedImage]>?
+    var feedView: FeedView?
+    weak var loadingView: FeedLoadingView?
     
     func loadFeed() {
-        onLoadingStateChange?(true)
+        loadingView?.display(isLoading: true)
         feedLoader.load { [weak self] result in
             if let feed = try? result.get() {
-                self?.onFeedLoad?(feed)
+                self?.feedView?.display(feed: feed)
             }
-            self?.onLoadingStateChange?(false)
+            self?.loadingView?.display(isLoading: false)
         }
     }
 }
