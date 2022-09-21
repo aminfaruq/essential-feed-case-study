@@ -123,6 +123,7 @@
                         <connections>
                             <outlet property="dataSource" destination="dUj-n6-1QR" id="BTe-xR-BWz"/>
                             <outlet property="delegate" destination="dUj-n6-1QR" id="Qbp-lj-tQu"/>
+                            <outlet property="prefetchDataSource" destination="dUj-n6-1QR" id="o8l-Tt-3Z2"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Feed" id="hMx-oM-bFa"/>
