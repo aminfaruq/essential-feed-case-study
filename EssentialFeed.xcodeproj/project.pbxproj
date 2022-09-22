@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8308B8DB28AE2832009E2F5B /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */; };
+		8314BA0328DC14EF003A643C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314BA0228DC14EF003A643C /* MainQueueDispatchDecorator.swift */; };
 		831E3C4D28DACBBF004D6390 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831E3C4C28DACBBF004D6390 /* Feed.storyboard */; };
 		831E3C4F28DACC66004D6390 /* Feed.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 831E3C4E28DACC66004D6390 /* Feed.xcassets */; };
 		831E3C5128DADBED004D6390 /* UITableView+Dequeueing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831E3C5028DADBED004D6390 /* UITableView+Dequeueing.swift */; };
@@ -120,6 +121,7 @@
 
 /* Begin PBXFileReference section */
 		8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
+		8314BA0228DC14EF003A643C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		831E3C4C28DACBBF004D6390 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		831E3C4E28DACC66004D6390 /* Feed.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Feed.xcassets; sourceTree = "<group>"; };
 		831E3C5028DADBED004D6390 /* UITableView+Dequeueing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Dequeueing.swift"; sourceTree = "<group>"; };
@@ -339,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				83354AA828D82D4C0084F801 /* FeedUIComposer.swift */,
+				8314BA0228DC14EF003A643C /* MainQueueDispatchDecorator.swift */,
 			);
 			path = Composers;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				83E4F5A328D6E67700B54D55 /* FeedViewController.swift in Sources */,
 				832C8B5328D9AF1E00DBA4A1 /* FeedImagePresenter.swift in Sources */,
 				831E3C5328DADCA5004D6390 /* UIImageView+Animations.swift in Sources */,
+				8314BA0328DC14EF003A643C /* MainQueueDispatchDecorator.swift in Sources */,
 				83E4F5A528D7015100B54D55 /* FeedImageCell.swift in Sources */,
 				83354AAE28D851980084F801 /* FeedImageViewModel.swift in Sources */,
 				83354AA628D828C70084F801 /* FeedImageCellController.swift in Sources */,
