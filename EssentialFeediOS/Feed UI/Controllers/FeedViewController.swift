@@ -16,6 +16,7 @@ public final class FeedViewController: UITableViewController, UITableViewDataSou
     
     var tableModel = [FeedImageCellController]() {
         didSet { tableView.reloadData() }
+        
     }
     
     public override func viewDidLoad() {
