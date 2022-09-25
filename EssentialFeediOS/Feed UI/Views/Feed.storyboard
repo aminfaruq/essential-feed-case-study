@@ -38,7 +38,7 @@
                                 <constraint firstAttribute="bottom" secondItem="b3x-xm-RFp" secondAttribute="bottom" constant="8" id="p3Z-6C-KoT"/>
                             </constraints>
                             <connections>
-                                <outlet property="label" destination="b3x-xm-RFp" id="56N-VW-KWs"/>
+                                <outlet property="label" destination="b3x-xm-RFp" id="4Hg-pw-EDX"/>
                             </connections>
                         </view>
                         <view key="tableFooterView" contentMode="scaleToFill" id="8Tr-Xi-la7">
@@ -168,6 +168,11 @@
                     </refreshControl>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJ4-Sz-iP6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="zcR-Jk-5hD">
+                    <connections>
+                        <action selector="hideMessageAnimated" destination="IZD-xc-QEE" id="MiH-sF-PJv"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="915.94202898550736" y="104.46428571428571"/>
         </scene>
