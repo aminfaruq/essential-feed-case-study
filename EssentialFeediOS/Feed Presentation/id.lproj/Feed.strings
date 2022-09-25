@@ -7,3 +7,4 @@
 */
 
 "FEED_VIEW_TITLE" = "Feed Saya";
+"FEED_VIEW_CONNECTION_ERROR" = "Tidak dapat terhubung ke server";

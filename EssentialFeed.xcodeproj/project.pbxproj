@@ -62,10 +62,14 @@
 		8392418F28C5A8C300B71CB0 /* CacheFeedUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392418E28C5A8C300B71CB0 /* CacheFeedUseCaseTest.swift */; };
 		8392419228C5D4CD00B71CB0 /* LocalFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392419128C5D4CD00B71CB0 /* LocalFeedLoader.swift */; };
 		8392419428C5D5BA00B71CB0 /* FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8392419328C5D5BA00B71CB0 /* FeedStore.swift */; };
+		839A166828E02403002734B2 /* FeedErrorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A166728E02403002734B2 /* FeedErrorViewModel.swift */; };
+		839A166A28E02454002734B2 /* UIRefreshControl+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839A166928E02454002734B2 /* UIRefreshControl+Helpers.swift */; };
 		83A2F1DD28C72DCE00673F99 /* RemoteFeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F1DC28C72DCE00673F99 /* RemoteFeedItem.swift */; };
 		83A2F1DF28C72E1800673F99 /* LocalFeedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F1DE28C72E1800673F99 /* LocalFeedImage.swift */; };
 		83A2F1E128C862CE00673F99 /* LoadFeedFromCacheUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F1E028C862CE00673F99 /* LoadFeedFromCacheUseCaseTest.swift */; };
 		83A2F1E428C8645B00673F99 /* FeedStoreSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A2F1E328C8645B00673F99 /* FeedStoreSpy.swift */; };
+		83A5453C28E0126B00BC7ADF /* FeedPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5453B28E0126B00BC7ADF /* FeedPresenterTest.swift */; };
+		83A5453E28E01EE600BC7ADF /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5453D28E01EE600BC7ADF /* ErrorView.swift */; };
 		83B8A5BC28CB098B0019EE3A /* FeedCachePolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B8A5BB28CB098B0019EE3A /* FeedCachePolicy.swift */; };
 		83BD665328BCB1A000F0F5AE /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BD665228BCB1A000F0F5AE /* URLSessionHTTPClient.swift */; };
 		83BDF52F28C9C07F00D538CD /* ValidateFeedCacheUseCaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BDF52E28C9C07F00D538CD /* ValidateFeedCacheUseCaseTest.swift */; };
@@ -181,10 +185,14 @@
 		8392418E28C5A8C300B71CB0 /* CacheFeedUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheFeedUseCaseTest.swift; sourceTree = "<group>"; };
 		8392419128C5D4CD00B71CB0 /* LocalFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedLoader.swift; sourceTree = "<group>"; };
 		8392419328C5D5BA00B71CB0 /* FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStore.swift; sourceTree = "<group>"; };
+		839A166728E02403002734B2 /* FeedErrorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedErrorViewModel.swift; sourceTree = "<group>"; };
+		839A166928E02454002734B2 /* UIRefreshControl+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+Helpers.swift"; sourceTree = "<group>"; };
 		83A2F1DC28C72DCE00673F99 /* RemoteFeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedItem.swift; sourceTree = "<group>"; };
 		83A2F1DE28C72E1800673F99 /* LocalFeedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFeedImage.swift; sourceTree = "<group>"; };
 		83A2F1E028C862CE00673F99 /* LoadFeedFromCacheUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadFeedFromCacheUseCaseTest.swift; sourceTree = "<group>"; };
 		83A2F1E328C8645B00673F99 /* FeedStoreSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedStoreSpy.swift; sourceTree = "<group>"; };
+		83A5453B28E0126B00BC7ADF /* FeedPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPresenterTest.swift; sourceTree = "<group>"; };
+		83A5453D28E01EE600BC7ADF /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		83B8A5BB28CB098B0019EE3A /* FeedCachePolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCachePolicy.swift; sourceTree = "<group>"; };
 		83BD665228BCB1A000F0F5AE /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		83BDF52E28C9C07F00D538CD /* ValidateFeedCacheUseCaseTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateFeedCacheUseCaseTest.swift; sourceTree = "<group>"; };
@@ -270,6 +278,7 @@
 		832C8B5128D9987D00DBA4A1 /* Feed Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				839A166728E02403002734B2 /* FeedErrorViewModel.swift */,
 				83354AAD28D851980084F801 /* FeedImageViewModel.swift */,
 				83354AAB28D84B1E0084F801 /* FeedPresenter.swift */,
 				832C8B5228D9AF1E00DBA4A1 /* FeedImagePresenter.swift */,
@@ -292,12 +301,11 @@
 		83354A8B28D80BE40084F801 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				839A166628E02371002734B2 /* Helpers */,
 				83E4F5A428D7015100B54D55 /* FeedImageCell.swift */,
-				83E4F5A628D7132800B54D55 /* UIView+Shimmering.swift */,
 				831E3C4C28DACBBF004D6390 /* Feed.storyboard */,
 				831E3C4E28DACC66004D6390 /* Feed.xcassets */,
-				831E3C5028DADBED004D6390 /* UITableView+Dequeueing.swift */,
-				831E3C5228DADCA5004D6390 /* UIImageView+Animations.swift */,
+				83A5453D28E01EE600BC7ADF /* ErrorView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -447,6 +455,7 @@
 		838B411328917A5A005075D3 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				83A5453A28E0124200BC7ADF /* Feed Presentation */,
 				83250F1128B899EE00A58390 /* Helpers */,
 				8392418D28C5A81400B71CB0 /* Feed Cache */,
 				83D8DC1F28A3934500958D2F /* Feed Api */,
@@ -489,6 +498,17 @@
 			path = "Feed Cache";
 			sourceTree = "<group>";
 		};
+		839A166628E02371002734B2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				831E3C5228DADCA5004D6390 /* UIImageView+Animations.swift */,
+				831E3C5028DADBED004D6390 /* UITableView+Dequeueing.swift */,
+				83E4F5A628D7132800B54D55 /* UIView+Shimmering.swift */,
+				839A166928E02454002734B2 /* UIRefreshControl+Helpers.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		83A2F1E228C8644300673F99 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -496,6 +516,14 @@
 				83BDF53028C9C62A00D538CD /* FeedCacheTestHelpers.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		83A5453A28E0124200BC7ADF /* Feed Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				83A5453B28E0126B00BC7ADF /* FeedPresenterTest.swift */,
+			);
+			path = "Feed Presentation";
 			sourceTree = "<group>";
 		};
 		83D6AFC128958E6000C7D58F /* Feed API */ = {
@@ -682,7 +710,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1340;
-				LastUpgradeCheck = 1330;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					8329C8F128D1C055005FDCB4 = {
 						CreatedOnToolsVersion = 13.4;
@@ -842,6 +870,7 @@
 				83BDF52F28C9C07F00D538CD /* ValidateFeedCacheUseCaseTest.swift in Sources */,
 				8372A66828D05BFB00CFD563 /* FeedStoreSpecs.swift in Sources */,
 				83A2F1E128C862CE00673F99 /* LoadFeedFromCacheUseCaseTest.swift in Sources */,
+				83A5453C28E0126B00BC7ADF /* FeedPresenterTest.swift in Sources */,
 				8372A66A28D0624900CFD563 /* XCTestCase+FeedStoreSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -852,6 +881,8 @@
 			files = (
 				83354AA428D824EA0084F801 /* FeedImageDataLoader.swift in Sources */,
 				831E74E728D9B62100F34376 /* FeedViewModel.swift in Sources */,
+				83A5453E28E01EE600BC7ADF /* ErrorView.swift in Sources */,
+				839A166A28E02454002734B2 /* UIRefreshControl+Helpers.swift in Sources */,
 				83E4F5A728D7132800B54D55 /* UIView+Shimmering.swift in Sources */,
 				831E3C5128DADBED004D6390 /* UITableView+Dequeueing.swift in Sources */,
 				831E74E528D9B61000F34376 /* FeedLoadingViewModel.swift in Sources */,
@@ -866,6 +897,7 @@
 				8314BA0728DC15CC003A643C /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				83354AA628D828C70084F801 /* FeedImageCellController.swift in Sources */,
 				83354AAC28D84B1E0084F801 /* FeedPresenter.swift in Sources */,
+				839A166828E02403002734B2 /* FeedErrorViewModel.swift in Sources */,
 				8314BA0B28DC1671003A643C /* FeedViewAdapter.swift in Sources */,
 				83354AA928D82D4C0084F801 /* FeedUIComposer.swift in Sources */,
 			);
@@ -930,6 +962,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -946,6 +979,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -964,6 +998,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -981,6 +1016,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1029,6 +1065,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -1046,6 +1083,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -1093,6 +1131,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -1104,6 +1143,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -1121,6 +1161,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1129,6 +1170,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1150,6 +1192,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1158,6 +1201,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -1179,6 +1223,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
@@ -1196,6 +1241,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = WZB5R9B92Y;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
