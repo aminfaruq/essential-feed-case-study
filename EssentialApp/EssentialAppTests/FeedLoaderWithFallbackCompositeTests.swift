@@ -1,6 +1,6 @@
 //
-//  RemoteWithLocalFallbackFeedLoaderTest.swift
-//  RemoteWithLocalFallbackFeedLoaderTest
+//  FeedLoaderWithFallbackCompositeTests.swift
+//  FeedLoaderWithFallbackCompositeTests
 //
 //  Created by Amin faruq on 28/09/22.
 //
@@ -9,7 +9,7 @@ import XCTest
 import EssentialFeed
 import EssentialApp
 
-class RemoteWithLocalFallbackFeedLoaderTest: XCTestCase {
+class FeedLoaderWithFallbackCompositeTests: XCTestCase {
     
     func test_load_deliversPrimaryFeedOnPrimaryLoaderSuccess() {
         let primaryFeed = uniqueFeed()
@@ -66,12 +66,8 @@ class RemoteWithLocalFallbackFeedLoaderTest: XCTestCase {
         wait(for: [exp], timeout: 1.0)
     }
     
-    private func anyNSError() -> NSError {
-        return NSError(domain: "any error", code: 0)
-    }
-    
     private func uniqueFeed() -> [FeedImage] {
-        return [FeedImage(id: UUID(), description: "any", location: "any", url: URL(string: "http://any-url.com")!)]
+        return [FeedImage(id: UUID(), description: "any", location: "any", url: anyURL())]
     }
     
     private class LoaderStub: FeedLoader {
