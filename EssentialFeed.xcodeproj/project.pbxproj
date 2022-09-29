@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8304BFFE28E57E1F007112D1 /* FeedCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304BFFD28E57E1F007112D1 /* FeedCache.swift */; };
 		8308B8DB28AE2832009E2F5B /* URLSessionHTTPClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */; };
 		8308F44C28E2F2C100D19CE8 /* CoreDataFeedStore+FeedStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8308F44B28E2F2C100D19CE8 /* CoreDataFeedStore+FeedStore.swift */; };
 		8314BA0328DC14EF003A643C /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314BA0228DC14EF003A643C /* MainQueueDispatchDecorator.swift */; };
@@ -142,6 +143,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8304BFFD28E57E1F007112D1 /* FeedCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCache.swift; sourceTree = "<group>"; };
 		8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientTests.swift; sourceTree = "<group>"; };
 		8308F44B28E2F2C100D19CE8 /* CoreDataFeedStore+FeedStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataFeedStore+FeedStore.swift"; sourceTree = "<group>"; };
 		8314BA0228DC14EF003A643C /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 				83354AA328D824EA0084F801 /* FeedImageDataLoader.swift */,
 				838B412028917A93005075D3 /* FeedImage.swift */,
 				838B412228917AE2005075D3 /* FeedLoader.swift */,
+				8304BFFD28E57E1F007112D1 /* FeedCache.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -886,6 +889,7 @@
 				83BA525928E2A2BD00D6E4D2 /* FeedImageDataStore.swift in Sources */,
 				83CFEDE328E19D7C00135CF8 /* HTTPURLResponse+StatusCode.swift in Sources */,
 				83D8DC1E28A3870700958D2F /* FeedItemsMapper.swift in Sources */,
+				8304BFFE28E57E1F007112D1 /* FeedCache.swift in Sources */,
 				83BA526A28E2C4B000D6E4D2 /* CoreDataFeedStore+FeedImageDataLoader.swift in Sources */,
 				83A2F1DD28C72DCE00673F99 /* RemoteFeedItem.swift in Sources */,
 				83BA526828E2C3CD00D6E4D2 /* FeedStore.xcdatamodeld in Sources */,
