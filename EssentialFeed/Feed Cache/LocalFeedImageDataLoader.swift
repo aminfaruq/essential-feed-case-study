@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class LocalFeedImageDataLoader : FeedImageDataLoader{
+public final class LocalFeedImageDataLoader : FeedImageDataLoader {
     private let store: FeedImageDataStore
     
     public init(store: FeedImageDataStore) {
@@ -15,7 +15,7 @@ public final class LocalFeedImageDataLoader : FeedImageDataLoader{
     }
 }
 
-extension LocalFeedImageDataLoader{
+extension LocalFeedImageDataLoader: FeedImageDataCache {
     public typealias SaveResult = Result<Void, Swift.Error>
     
     public enum SaveError: Error {
