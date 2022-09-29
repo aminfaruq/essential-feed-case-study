@@ -104,7 +104,7 @@ class FeedImageDataLoaderWithFallbackCompositeTests: XCTestCase {
         return (sut, primaryLoader, fallbackLoader)
     }
     
-    private func expect(_ sut: FeedImageDataLoader, toCompleteWith expectedResult: FeedImageDataLoader.Result, when action: () -> Void, file: StaticString = #file, line: UInt = #line) {
+    private func expect(_ sut: FeedImageDataLoader, toCompleteWith expectedResult: FeedImageDataLoader.Result, when action: () -> Void, file: StaticString = #filePath, line: UInt = #line) {
         let exp = expectation(description: "Wait for load completion")
         
         _ = sut.loadImageData(from: anyURL()) { receivedResult in
