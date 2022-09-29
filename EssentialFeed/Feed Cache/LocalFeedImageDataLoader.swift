@@ -30,6 +30,7 @@ extension LocalFeedImageDataLoader: FeedImageDataCache {
         })
     }
 }
+
 extension LocalFeedImageDataLoader {
     
     public typealias LoadResult = FeedImageDataLoader.Result
