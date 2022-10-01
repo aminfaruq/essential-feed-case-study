@@ -8,10 +8,10 @@
       <BuildActionEntries>
          <BuildActionEntry
             buildForTesting = "YES"
-            buildForRunning = "NO"
+            buildForRunning = "YES"
             buildForProfiling = "NO"
             buildForArchiving = "NO"
-            buildForAnalyzing = "NO">
+            buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "835502D628E6CDD400C9FBD8"
@@ -54,6 +54,10 @@
       <CommandLineArguments>
          <CommandLineArgument
             argument = "-connectivity"
+            isEnabled = "YES">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "-reset"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>
