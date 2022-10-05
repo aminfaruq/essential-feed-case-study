@@ -454,7 +454,8 @@
 		838B410728917A5A005075D3 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				83D2FF4628ED8C9400F0CE08 /* Shared Api Infra */,
+				83D2FF4C28ED934C00F0CE08 /* Image Comments API */,
+				83D2FF4628ED8C9400F0CE08 /* Shared API Infra */,
 				83D2FF4328ED89CB00F0CE08 /* Image Comments Feature */,
 				83A7F95428E14DAA009BDD2A /* Feed Presentation */,
 				8392419028C5D49F00B71CB0 /* Feed Cache */,
@@ -469,10 +470,11 @@
 		838B411328917A5A005075D3 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				83D2FF4B28ED8D6000F0CE08 /* Shared Api Infra */,
+				83D2FF4D28ED93B900F0CE08 /* Image Comments API */,
+				83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */,
 				83A5453A28E0124200BC7ADF /* Feed Presentation */,
 				8392418D28C5A81400B71CB0 /* Feed Cache */,
-				83D8DC1F28A3934500958D2F /* Feed Api */,
+				83D8DC1F28A3934500958D2F /* Feed API */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -573,13 +575,13 @@
 			path = "Image Comments Feature";
 			sourceTree = "<group>";
 		};
-		83D2FF4628ED8C9400F0CE08 /* Shared Api Infra */ = {
+		83D2FF4628ED8C9400F0CE08 /* Shared API Infra */ = {
 			isa = PBXGroup;
 			children = (
 				83D8DC1B28A3865500958D2F /* HTTPClient.swift */,
 				83BD665228BCB1A000F0F5AE /* URLSessionHTTPClient.swift */,
 			);
-			path = "Shared Api Infra";
+			path = "Shared API Infra";
 			sourceTree = "<group>";
 		};
 		83D2FF4828ED8D3800F0CE08 /* Helpers */ = {
@@ -591,13 +593,30 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		83D2FF4B28ED8D6000F0CE08 /* Shared Api Infra */ = {
+		83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */ = {
 			isa = PBXGroup;
 			children = (
 				83D2FF4828ED8D3800F0CE08 /* Helpers */,
 				8308B8DA28AE2832009E2F5B /* URLSessionHTTPClientTests.swift */,
 			);
-			path = "Shared Api Infra";
+			path = "Shared API Infra";
+			sourceTree = "<group>";
+		};
+		83D2FF4C28ED934C00F0CE08 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				83D2FF4128ED884800F0CE08 /* RemoteImageCommentsLoader.swift */,
+				83D2FF3F28ED87F400F0CE08 /* ImageCommentsMapper.swift */,
+			);
+			path = "Image Comments API";
+			sourceTree = "<group>";
+		};
+		83D2FF4D28ED93B900F0CE08 /* Image Comments API */ = {
+			isa = PBXGroup;
+			children = (
+				83D2FF3D28ED87B600F0CE08 /* LoadImageCommentsFromRemoteUseCaseTest.swift */,
+			);
+			path = "Image Comments API";
 			sourceTree = "<group>";
 		};
 		83D6AFC128958E6000C7D58F /* Feed API */ = {
@@ -608,8 +627,6 @@
 				83A2F1DC28C72DCE00673F99 /* RemoteFeedItem.swift */,
 				83CFEDE028E1980F00135CF8 /* RemoteFeedImageDataLoader.swift */,
 				83CFEDE228E19D7C00135CF8 /* HTTPURLResponse+StatusCode.swift */,
-				83D2FF3F28ED87F400F0CE08 /* ImageCommentsMapper.swift */,
-				83D2FF4128ED884800F0CE08 /* RemoteImageCommentsLoader.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -624,15 +641,14 @@
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
 		};
-		83D8DC1F28A3934500958D2F /* Feed Api */ = {
+		83D8DC1F28A3934500958D2F /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
 				83250F1128B899EE00A58390 /* Helpers */,
 				83235B122892C9A1001072D3 /* LoadFeedFromRemoteUseCaseTest.swift */,
 				83A7F96728E18217009BDD2A /* LoadFeedImageDataFromRemoteUseCaseTests.swift */,
-				83D2FF3D28ED87B600F0CE08 /* LoadImageCommentsFromRemoteUseCaseTest.swift */,
 			);
-			path = "Feed Api";
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		83FA785028D59E03001C8D1D /* EssentialFeediOS */ = {
