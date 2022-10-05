@@ -7,14 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8304C00228E58025007112D1 /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304C00128E58025007112D1 /* FeedImageDataLoaderCacheDecoratorTests.swift */; };
-		8304C00428E5825D007112D1 /* FeedImageDataLoaderSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304C00328E5825D007112D1 /* FeedImageDataLoaderSpy.swift */; };
-		8304C00628E5832F007112D1 /* XCTestCase+FeedImageDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304C00528E5832F007112D1 /* XCTestCase+FeedImageDataLoader.swift */; };
-		8304C00A28E58731007112D1 /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8304C00928E58731007112D1 /* FeedImageDataLoaderCacheDecorator.swift */; };
 		8344887528EA844A00388F30 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344887428EA844A00388F30 /* UIView+TestHelpers.swift */; };
 		83686CBF28E83AF000FBE48E /* SceneDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83686CBE28E83AF000FBE48E /* SceneDelegateTest.swift */; };
-		838F08E928E439A600D7C203 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08E828E439A600D7C203 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
-		838F08EB28E44A1300D7C203 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08EA28E44A1300D7C203 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 		838F08EF28E44B2800D7C203 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08ED28E44ADA00D7C203 /* XCTestCase+MemoryLeakTracking.swift */; };
 		838F08F128E44B7800D7C203 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08F028E44B7800D7C203 /* SharedTestHelpers.swift */; };
 		83A0574228E842E500C0E149 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0573C28E842E400C0E149 /* WeakRefVirtualProxy.swift */; };
@@ -22,7 +16,6 @@
 		83A0574428E842E500C0E149 /* FeedUIComposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0573D28E842E500C0E149 /* FeedUIComposer.swift */; };
 		83A0574528E842E500C0E149 /* FeedLoaderPresentationAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0574128E842E500C0E149 /* FeedLoaderPresentationAdapter.swift */; };
 		83A0574628E842E500C0E149 /* FeedViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0573E28E842E500C0E149 /* FeedViewAdapter.swift */; };
-		83A0574728E842E500C0E149 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0573F28E842E500C0E149 /* MainQueueDispatchDecorator.swift */; };
 		83A0575128E8431700C0E149 /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0574E28E8431700C0E149 /* UIButton+TestHelpers.swift */; };
 		83A0575228E8431700C0E149 /* UIControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0574C28E8431700C0E149 /* UIControl+TestHelpers.swift */; };
 		83A0575328E8431700C0E149 /* FeedImageCell+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A0574928E8431600C0E149 /* FeedImageCell+TestHelpers.swift */; };
@@ -73,20 +66,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8304C00128E58025007112D1 /* FeedImageDataLoaderCacheDecoratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecoratorTests.swift; sourceTree = "<group>"; };
-		8304C00328E5825D007112D1 /* FeedImageDataLoaderSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderSpy.swift; sourceTree = "<group>"; };
-		8304C00528E5832F007112D1 /* XCTestCase+FeedImageDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+FeedImageDataLoader.swift"; sourceTree = "<group>"; };
-		8304C00928E58731007112D1 /* FeedImageDataLoaderCacheDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderCacheDecorator.swift; sourceTree = "<group>"; };
 		8344887428EA844A00388F30 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
 		83686CBE28E83AF000FBE48E /* SceneDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTest.swift; sourceTree = "<group>"; };
-		838F08E828E439A600D7C203 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackCompositeTests.swift; sourceTree = "<group>"; };
-		838F08EA28E44A1300D7C203 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		838F08ED28E44ADA00D7C203 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		838F08F028E44B7800D7C203 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
 		83A0573C28E842E400C0E149 /* WeakRefVirtualProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRefVirtualProxy.swift; sourceTree = "<group>"; };
 		83A0573D28E842E500C0E149 /* FeedUIComposer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedUIComposer.swift; sourceTree = "<group>"; };
 		83A0573E28E842E500C0E149 /* FeedViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewAdapter.swift; sourceTree = "<group>"; };
-		83A0573F28E842E500C0E149 /* MainQueueDispatchDecorator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainQueueDispatchDecorator.swift; sourceTree = "<group>"; };
 		83A0574028E842E500C0E149 /* FeedImageDataLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		83A0574128E842E500C0E149 /* FeedLoaderPresentationAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoaderPresentationAdapter.swift; sourceTree = "<group>"; };
 		83A0574828E8431600C0E149 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
@@ -148,8 +134,6 @@
 				83A0574A28E8431600C0E149 /* FeedViewControllerTest+Localization.swift */,
 				838F08ED28E44ADA00D7C203 /* XCTestCase+MemoryLeakTracking.swift */,
 				838F08F028E44B7800D7C203 /* SharedTestHelpers.swift */,
-				8304C00328E5825D007112D1 /* FeedImageDataLoaderSpy.swift */,
-				8304C00528E5832F007112D1 /* XCTestCase+FeedImageDataLoader.swift */,
 				83A0575E28E8576C00C0E149 /* HTTPClientStub.swift */,
 				83A0576028E8588900C0E149 /* InMemoryFeedStore.swift */,
 				8344887428EA844A00388F30 /* UIView+TestHelpers.swift */,
@@ -180,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				83A0573D28E842E500C0E149 /* FeedUIComposer.swift */,
-				83A0573F28E842E500C0E149 /* MainQueueDispatchDecorator.swift */,
 				83A0573C28E842E400C0E149 /* WeakRefVirtualProxy.swift */,
 				83A0574028E842E500C0E149 /* FeedImageDataLoaderPresentationAdapter.swift */,
 				83A0574128E842E500C0E149 /* FeedLoaderPresentationAdapter.swift */,
@@ -188,8 +171,6 @@
 				83A115B528E3F493009B298E /* AppDelegate.swift */,
 				83A115B728E3F493009B298E /* SceneDelegate.swift */,
 				83A115B928E3F493009B298E /* ViewController.swift */,
-				838F08EA28E44A1300D7C203 /* FeedImageDataLoaderWithFallbackComposite.swift */,
-				8304C00928E58731007112D1 /* FeedImageDataLoaderCacheDecorator.swift */,
 				83A115BE28E3F496009B298E /* Assets.xcassets */,
 				83A115C028E3F496009B298E /* LaunchScreen.storyboard */,
 				83A115C328E3F496009B298E /* Info.plist */,
@@ -201,9 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				838F08EC28E44A9C00D7C203 /* Helpers */,
-				838F08E828E439A600D7C203 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */,
 				83A0575A28E8433500C0E149 /* FeedUIIntegrationTest.swift */,
-				8304C00128E58025007112D1 /* FeedImageDataLoaderCacheDecoratorTests.swift */,
 				83686CBE28E83AF000FBE48E /* SceneDelegateTest.swift */,
 				83A0575C28E84D9E00C0E149 /* FeedAcceptanceTests.swift */,
 			);
@@ -325,11 +304,8 @@
 				83A0574328E842E500C0E149 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				83A0574528E842E500C0E149 /* FeedLoaderPresentationAdapter.swift in Sources */,
 				83A115B828E3F493009B298E /* SceneDelegate.swift in Sources */,
-				83A0574728E842E500C0E149 /* MainQueueDispatchDecorator.swift in Sources */,
-				838F08EB28E44A1300D7C203 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */,
 				83A0574428E842E500C0E149 /* FeedUIComposer.swift in Sources */,
 				83A0574228E842E500C0E149 /* WeakRefVirtualProxy.swift in Sources */,
-				8304C00A28E58731007112D1 /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
 				83A0574628E842E500C0E149 /* FeedViewAdapter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,17 +316,13 @@
 			files = (
 				838F08F128E44B7800D7C203 /* SharedTestHelpers.swift in Sources */,
 				83686CBF28E83AF000FBE48E /* SceneDelegateTest.swift in Sources */,
-				8304C00228E58025007112D1 /* FeedImageDataLoaderCacheDecoratorTests.swift in Sources */,
 				83A0575928E8431700C0E149 /* UIImage+TestHelpers.swift in Sources */,
 				83A0575228E8431700C0E149 /* UIControl+TestHelpers.swift in Sources */,
 				83A0575328E8431700C0E149 /* FeedImageCell+TestHelpers.swift in Sources */,
-				8304C00628E5832F007112D1 /* XCTestCase+FeedImageDataLoader.swift in Sources */,
 				83A0575128E8431700C0E149 /* UIButton+TestHelpers.swift in Sources */,
-				8304C00428E5825D007112D1 /* FeedImageDataLoaderSpy.swift in Sources */,
 				83A0576128E8588900C0E149 /* InMemoryFeedStore.swift in Sources */,
 				83A0575628E8431700C0E149 /* FeedViewControllerTest+LoaderSpy.swift in Sources */,
 				83A0575728E8431700C0E149 /* FeedViewControllerTest+Localization.swift in Sources */,
-				838F08E928E439A600D7C203 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */,
 				83A0575F28E8576C00C0E149 /* HTTPClientStub.swift in Sources */,
 				83A0575428E8431700C0E149 /* FeedViewController+Assertions.swift in Sources */,
 				8344887528EA844A00388F30 /* UIView+TestHelpers.swift in Sources */,
