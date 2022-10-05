@@ -58,7 +58,9 @@ extension Publisher {
 
 extension Publisher where Output == [FeedImage] {
     func caching(to cache: FeedCache) -> AnyPublisher<Output, Failure> {
-        handleEvents(receiveOutput: cache.saveIgnoringResult).eraseToAnyPublisher()
+        handleEvents(receiveOutput: { feed in
+            cache.saveIgnoringResult(feed)
+        }).eraseToAnyPublisher()
     }
 }
 
@@ -70,7 +72,8 @@ private extension FeedCache {
 
 extension Publisher {
     func dispatchOnMainQueue() -> AnyPublisher<Output, Failure> {
-        receive(on: DispatchQueue.immediateWhenOnMainQueueScheduler).eraseToAnyPublisher()
+        receive(on: DispatchQueue.immediateWhenOnMainQueueScheduler)
+            .eraseToAnyPublisher()
     }
 }
 
