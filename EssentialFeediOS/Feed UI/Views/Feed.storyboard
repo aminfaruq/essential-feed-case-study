@@ -131,7 +131,7 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="fNq-bB-P0M" firstAttribute="width" secondItem="R55-CK-Zb2" secondAttribute="width" id="ZJv-1f-qJo"/>
-                                                <constraint firstItem="1fY-Fg-kuO" firstAttribute="width" secondItem="R55-CK-Zb2" secondAttribute="width" multiplier="0.200535" id="m54-j4-Fht"/>
+                                                <constraint firstItem="1fY-Fg-kuO" firstAttribute="width" secondItem="R55-CK-Zb2" secondAttribute="width" multiplier="0.200535" priority="250" id="m54-j4-Fht"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
