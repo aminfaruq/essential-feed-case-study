@@ -49,7 +49,6 @@ class LoadResourcePresenterTest: XCTestCase {
             .display(errorMessage: localized("GENERIC_CONNECTION_ERROR")),
             .display(isLoading: false)
         ])
-        
     }
     
     // MARK: - Helpers
@@ -68,7 +67,7 @@ class LoadResourcePresenterTest: XCTestCase {
     }
     
     private func localized(_ key: String, file: StaticString = #filePath, line: UInt = #line) -> String {
-        let table = "Feed"
+        let table = "Shared"
         let bundle = Bundle(for: SUT.self)
         let value = bundle.localizedString(forKey: key, value: nil, table: table)
         if value == key {
