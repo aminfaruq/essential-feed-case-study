@@ -316,13 +316,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		831E00B028F3D48700BA6C96 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		83250F1128B899EE00A58390 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -493,11 +486,11 @@
 		838B411328917A5A005075D3 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
-				83AEA78228EFF3870099370E /* Shared Presentation */,
 				83250F1128B899EE00A58390 /* Helpers */,
+				83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */,
+				83AEA78228EFF3870099370E /* Shared Presentation */,
 				837AC4C728EE9DA400FB2777 /* Shared API */,
 				83D2FF4D28ED93B900F0CE08 /* Image Comments API */,
-				83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */,
 				83A5453A28E0124200BC7ADF /* Feed Presentation */,
 				8392418D28C5A81400B71CB0 /* Feed Cache */,
 				83D8DC1F28A3934500958D2F /* Feed API */,
@@ -614,7 +607,6 @@
 		83AEA78228EFF3870099370E /* Shared Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				831E00B028F3D48700BA6C96 /* Helpers */,
 				83AEA78328EFF3A80099370E /* LoadResourcePresenterTest.swift */,
 				833BBA4428F009820062CCB0 /* SharedLocalizationTests.swift */,
 			);

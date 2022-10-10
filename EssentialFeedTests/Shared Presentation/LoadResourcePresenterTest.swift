@@ -16,6 +16,14 @@ class LoadResourcePresenterTest: XCTestCase {
         XCTAssertTrue(view.messages.isEmpty, "Expected no view messase")
     }
     
+    func test_map_createsViewModel() {
+        let feed = uniqueImageFeed().models
+        
+        let viewmodel = FeedPresenter.map(feed)
+        
+        XCTAssertEqual(viewmodel.feed, feed)
+    }
+    
     func test_didStartLoading_displaysNoErrorMessageAndStartsLoading() {
         let (sut, view) = makeSUT()
         
