@@ -422,6 +422,15 @@
 			path = FeedStoreSpecs;
 			sourceTree = "<group>";
 		};
+		836485F428F541220007D4DC /* Feed UI */ = {
+			isa = PBXGroup;
+			children = (
+				836CF51828EAD0C100716CBE /* snapshots */,
+				83D844C128E951E100368589 /* FeedSnapshotTest.swift */,
+			);
+			path = "Feed UI";
+			sourceTree = "<group>";
+		};
 		836CF51828EAD0C100716CBE /* snapshots */ = {
 			isa = PBXGroup;
 			children = (
@@ -705,9 +714,8 @@
 		83D844C028E951E100368589 /* EssentialFeediOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				836CF51828EAD0C100716CBE /* snapshots */,
+				836485F428F541220007D4DC /* Feed UI */,
 				8344886B28E956F000388F30 /* Helpers */,
-				83D844C128E951E100368589 /* FeedSnapshotTest.swift */,
 			);
 			path = EssentialFeediOSTests;
 			sourceTree = "<group>";
