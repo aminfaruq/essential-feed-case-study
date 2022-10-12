@@ -448,8 +448,8 @@
 		836485F528F548A80007D4DC /* Shared UI */ = {
 			isa = PBXGroup;
 			children = (
-				836485F728F548EB0007D4DC /* Views */,
 				836485F628F548BB0007D4DC /* Controllers */,
+				836485F728F548EB0007D4DC /* Views */,
 			);
 			path = "Shared UI";
 			sourceTree = "<group>";
