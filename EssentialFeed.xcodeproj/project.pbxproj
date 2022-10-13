@@ -459,6 +459,7 @@
 		836485F628F548BB0007D4DC /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83B1ED7728F6A14900EFA649 /* CellController.swift */,
 				83E4F5A228D6E67700B54D55 /* ListViewController.swift */,
 			);
 			path = Controllers;
@@ -819,7 +820,6 @@
 			isa = PBXGroup;
 			children = (
 				83E3490A28F66F66007ACCE7 /* ImageCommentCellController.swift */,
-				83B1ED7728F6A14900EFA649 /* CellController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
