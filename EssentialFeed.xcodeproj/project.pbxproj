@@ -556,6 +556,66 @@
 			path = "Shared API";
 			sourceTree = "<group>";
 		};
+		8386187D28FFC5C500A78AE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				83D2FF4628ED8C9400F0CE08 /* Shared API Infra */,
+				83AEA78028EEE0320099370E /* Shared API */,
+				83AEA78128EFF0EC0099370E /* Shared Presentation */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		8386187E28FFC5E600A78AE9 /* Image Comments */ = {
+			isa = PBXGroup;
+			children = (
+				83D2FF4328ED89CB00F0CE08 /* Image Comments Feature */,
+				831E00BA28F3FCDC00BA6C96 /* Image Comments Presentation */,
+				83D2FF4C28ED934C00F0CE08 /* Image Comments API */,
+			);
+			path = "Image Comments";
+			sourceTree = "<group>";
+		};
+		8386187F28FFC5FD00A78AE9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				83D6AFC128958E6000C7D58F /* Feed API */,
+				838B411F28917A75005075D3 /* Feed Feature */,
+				8392419028C5D49F00B71CB0 /* Feed Cache */,
+				83A7F95428E14DAA009BDD2A /* Feed Presentation */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8386188028FFC66C00A78AE9 /* Image Comments */ = {
+			isa = PBXGroup;
+			children = (
+				831E00B728F3FBCD00BA6C96 /* Image Comments Presentation */,
+				83D2FF4D28ED93B900F0CE08 /* Image Comments API */,
+			);
+			path = "Image Comments";
+			sourceTree = "<group>";
+		};
+		8386188128FFC68300A78AE9 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				83D8DC1F28A3934500958D2F /* Feed API */,
+				8392418D28C5A81400B71CB0 /* Feed Cache */,
+				83A5453A28E0124200BC7ADF /* Feed Presentation */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		8386188228FFC69700A78AE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				837AC4C728EE9DA400FB2777 /* Shared API */,
+				83AEA78228EFF3870099370E /* Shared Presentation */,
+				83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		838B40FB28917A5A005075D3 = {
 			isa = PBXGroup;
 			children = (
@@ -586,16 +646,9 @@
 		838B410728917A5A005075D3 /* EssentialFeed */ = {
 			isa = PBXGroup;
 			children = (
-				83AEA78128EFF0EC0099370E /* Shared Presentation */,
-				83AEA78028EEE0320099370E /* Shared API */,
-				83D2FF4C28ED934C00F0CE08 /* Image Comments API */,
-				831E00BA28F3FCDC00BA6C96 /* Image Comments Presentation */,
-				83D2FF4628ED8C9400F0CE08 /* Shared API Infra */,
-				83D2FF4328ED89CB00F0CE08 /* Image Comments Feature */,
-				83A7F95428E14DAA009BDD2A /* Feed Presentation */,
-				8392419028C5D49F00B71CB0 /* Feed Cache */,
-				838B411F28917A75005075D3 /* Feed Feature */,
-				83D6AFC128958E6000C7D58F /* Feed API */,
+				8386187D28FFC5C500A78AE9 /* Shared */,
+				8386187F28FFC5FD00A78AE9 /* Feed */,
+				8386187E28FFC5E600A78AE9 /* Image Comments */,
 				838B410828917A5A005075D3 /* EssentialFeed.h */,
 				838B410928917A5A005075D3 /* EssentialFeed.docc */,
 			);
@@ -605,15 +658,10 @@
 		838B411328917A5A005075D3 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				8386188228FFC69700A78AE9 /* Shared */,
+				8386188128FFC68300A78AE9 /* Feed */,
+				8386188028FFC66C00A78AE9 /* Image Comments */,
 				83250F1128B899EE00A58390 /* Helpers */,
-				83D2FF4B28ED8D6000F0CE08 /* Shared API Infra */,
-				83AEA78228EFF3870099370E /* Shared Presentation */,
-				837AC4C728EE9DA400FB2777 /* Shared API */,
-				83D2FF4D28ED93B900F0CE08 /* Image Comments API */,
-				831E00B728F3FBCD00BA6C96 /* Image Comments Presentation */,
-				83A5453A28E0124200BC7ADF /* Feed Presentation */,
-				8392418D28C5A81400B71CB0 /* Feed Cache */,
-				83D8DC1F28A3934500958D2F /* Feed API */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -766,6 +814,7 @@
 		83D2FF4C28ED934C00F0CE08 /* Image Comments API */ = {
 			isa = PBXGroup;
 			children = (
+				8324D5B328FD299D005A085B /* ImageCommentsEndpoint.swift */,
 				83D2FF3F28ED87F400F0CE08 /* ImageCommentsMapper.swift */,
 			);
 			path = "Image Comments API";
@@ -786,7 +835,6 @@
 				83CFEDE228E19D7C00135CF8 /* HTTPURLResponse+StatusCode.swift */,
 				837AC4CC28EEAD8700FB2777 /* FeedImageDataMapper.swift */,
 				8324D5B128FD293D005A085B /* FeedEndpoint.swift */,
-				8324D5B328FD299D005A085B /* ImageCommentsEndpoint.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
