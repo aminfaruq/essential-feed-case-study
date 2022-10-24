@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8344887528EA844A00388F30 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8344887428EA844A00388F30 /* UIView+TestHelpers.swift */; };
+		83579F5A29069761003F9324 /* NullStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83579F5929069761003F9324 /* NullStore.swift */; };
 		83686CBF28E83AF000FBE48E /* SceneDelegateTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83686CBE28E83AF000FBE48E /* SceneDelegateTest.swift */; };
 		838F08EF28E44B2800D7C203 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08ED28E44ADA00D7C203 /* XCTestCase+MemoryLeakTracking.swift */; };
 		838F08F128E44B7800D7C203 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838F08F028E44B7800D7C203 /* SharedTestHelpers.swift */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		8344887428EA844A00388F30 /* UIView+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+TestHelpers.swift"; sourceTree = "<group>"; };
+		83579F5929069761003F9324 /* NullStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NullStore.swift; sourceTree = "<group>"; };
 		83686CBE28E83AF000FBE48E /* SceneDelegateTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegateTest.swift; sourceTree = "<group>"; };
 		838F08ED28E44ADA00D7C203 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		838F08F028E44B7800D7C203 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				83A0573D28E842E500C0E149 /* FeedUIComposer.swift */,
+				83579F5929069761003F9324 /* NullStore.swift */,
 				83C9F7BE28FCFC33000FB88D /* CommentsUIComposer.swift */,
 				83A0573C28E842E400C0E149 /* WeakRefVirtualProxy.swift */,
 				83A0574128E842E500C0E149 /* LoadResourcePresentationAdapter.swift */,
@@ -304,6 +307,7 @@
 			files = (
 				83A115BA28E3F493009B298E /* ViewController.swift in Sources */,
 				83A115B628E3F493009B298E /* AppDelegate.swift in Sources */,
+				83579F5A29069761003F9324 /* NullStore.swift in Sources */,
 				83D2FF3C28ED60AB00F0CE08 /* CombineHelpers.swift in Sources */,
 				83A0574528E842E500C0E149 /* LoadResourcePresentationAdapter.swift in Sources */,
 				83C9F7BF28FCFC33000FB88D /* CommentsUIComposer.swift in Sources */,
