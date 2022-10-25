@@ -51,7 +51,8 @@ class FeedAcceptanceTests: XCTestCase {
         XCTAssertEqual(offlineFeed.numberOfRenderedFeedImageViews(), 3)
         XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 0), makeImageData0())
         XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 1), makeImageData1())
-        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 2), makeImageData2())    }
+        XCTAssertEqual(offlineFeed.renderedFeedImageData(at: 2), makeImageData2())
+    }
     
     func test_onLaunch_displaysEmptyFeedWhenCustomerHasNoConnectivityAndNoCache() {
         let feed = launch(httpClient: .offline, store: .empty)
@@ -88,7 +89,7 @@ class FeedAcceptanceTests: XCTestCase {
         store: InMemoryFeedStore = .empty
     ) -> ListViewController {
         let sut = SceneDelegate(httpClient: httpClient, store: store)
-        sut.window = UIWindow()
+        sut.window = UIWindow(frame: CGRect(x: 0, y: 0, width: 1, height: 1))
         sut.configureWindow()
         
         let nav = sut.window?.rootViewController as? UINavigationController
