@@ -220,6 +220,7 @@ class FeedUIIntegrationTest: XCTestCase {
     func test_loadMoreCompletion_dispatchesFromBackgroundToMainThread() {
         let (sut, loader) = makeSUT()
         sut.loadViewIfNeeded()
+        
         loader.completeFeedLoading(at: 0)
         sut.simulateLoadMoreFeedAction()
         
