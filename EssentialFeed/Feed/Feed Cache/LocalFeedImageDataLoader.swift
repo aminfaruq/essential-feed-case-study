@@ -29,7 +29,7 @@ extension LocalFeedImageDataLoader: FeedImageDataCache {
     }
 }
 
-extension LocalFeedImageDataLoader {
+extension LocalFeedImageDataLoader : FeedImageDataLoader {
     
     public enum LoadError: Swift.Error {
         case failed
